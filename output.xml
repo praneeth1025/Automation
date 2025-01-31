@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on darwin)" generated="2025-01-30T23:42:12.883561" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/saipraneethvaddepelli/Desktop/automation/test.robot">
+<test id="s1-t1" name="Open Google" line="45">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:42:13.245599" level="INFO">Opening browser 'Chrome' to base url 'https://www.linkedin.com/login'.</msg>
+<arg>https://www.linkedin.com/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T23:42:13.244668" elapsed="2.212764"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T23:42:15.458848" elapsed="0.330286"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:42:20.791114" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:42:15.789847" elapsed="5.002765"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:42:20.797137" level="INFO">Typing text 'saipraneethvaddepelli@gmail.com' into text field '//div/input[@id='username']'.</msg>
+<arg>${email_xpath}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:42:20.794328" elapsed="0.144589"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:42:22.940897" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:42:20.939551" elapsed="2.001743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:42:22.942513" level="INFO">Typing text 'Sai1025@' into text field '//div/input[@id='password']'.</msg>
+<arg>${password_xpath}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:42:22.941812" elapsed="0.038420"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:42:22.981467" level="INFO">Clicking element '//div[@class='login__form_action_container ']//button'.</msg>
+<arg>//div[@class='login__form_action_container ']//button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:42:22.980842" elapsed="12.721375"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>elemtent clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T23:42:35.704437" elapsed="0.002119"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:42:45.713178" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:42:35.708932" elapsed="10.006437"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>started</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T23:42:45.717529" elapsed="0.002125"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='share-box-feed-entry__avatar']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-30T23:42:45.721124" elapsed="0.032537"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:42:45.755630" level="INFO">Clicking element '//span[text()='Jobs']'.</msg>
+<arg>//span[text()='Jobs']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:42:45.754680" elapsed="0.085387"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:43:05.843636" level="INFO">Slept 20 seconds.</msg>
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:42:45.840740" elapsed="20.005776"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//a[@aria-label='Show all Job picks for you']/span[text()='Show all']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-30T23:43:05.849182" elapsed="0.029775"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:43:08.882665" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:43:05.880036" elapsed="3.005413"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:43:08.889917" level="INFO">Clicking element '//a[@aria-label='Show all Job picks for you']/span[text()='Show all']'.</msg>
+<arg>//a[@aria-label='Show all Job picks for you']/span[text()='Show all']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:43:08.887895" elapsed="0.088518"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:43:38.979608" level="INFO">Slept 30 seconds.</msg>
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:43:08.977056" elapsed="30.005333"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:43:49.990989" level="INFO">Typing text 'software engineer' into text field '(//input)[1]'.</msg>
+<arg>(//input)[1]</arg>
+<arg>software engineer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:43:38.985190" elapsed="11.225963"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:43:50.892190" level="INFO">Sending key(s) ('ENTER',) to (//input)[1] element.</msg>
+<msg time="2025-01-30T23:43:56.201128" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-01-30T23:43:56.202785" level="INFO">Releasing special key ENTER.</msg>
+<arg>(//input)[1]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-30T23:43:50.211889" elapsed="6.160452"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:44:07.322750" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:43:56.372861" elapsed="10.952499"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:44:08.353592" level="INFO">Clicking element '//button[text()="Easy Apply"]'.</msg>
+<arg>//button[text()="Easy Apply"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T23:44:07.328660" elapsed="1.138357"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T23:44:39.172785" level="INFO">Slept 30 seconds.</msg>
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T23:44:08.467509" elapsed="30.707401"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-01-30T23:44:40.058779" level="INFO">@{jobs_list} = [ ]</msg>
+<var>@{jobs_list}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-01-30T23:44:39.177132" elapsed="0.882358"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-01-30T23:44:40.610485" level="INFO">@{jobs_list} = [ ]</msg>
+<arg>@{jobs_list}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-01-30T23:44:40.060958" elapsed="0.550308"/>
+</kw>
+<kw name="click job">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-01-30T23:44:41.108276" level="INFO">@{jobs} = [ ]</msg>
+<var>@{jobs}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-01-30T23:44:41.106784" elapsed="0.002212"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-01-30T23:44:41.131112" level="INFO">@{jobs} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="581333d03f6ab89724390b278370469e", element="f.D051BE634D0808092BA52CBF0E33D4D0.d.71713071F0233C3A67917D10798080AE.e.329")&gt; | &lt;selenium.webd...

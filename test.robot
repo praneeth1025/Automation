@@ -7,8 +7,8 @@ Library    XML
 *** Variables ***
 ${email_xpath}    //div/input[@id='username']
 ${password_xpath}    //div/input[@id='password']
-${username}    saipraneethvaddepelli@gmail.com
-${password}    Sai1025@
+${username}    ######
+${password}    ####
 
 *** Keyword ***
 check modal is opened

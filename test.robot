@@ -12,8 +12,8 @@ ${password}    Sai1025@
 
 *** Keyword ***
 check modal is opened
-    ${element_visibility}    Element Should Be Visible    //button[@aria-label = "Dismiss"]
-    IF    ${element_visibility} == True
+    ${element_visibility_dismiss}    Run Keyword And Return Status    Element Should Be Visible    //button[@aria-label = "Dismiss"]
+    IF    ${element_visibility_dismiss} == True
         Click Element    //button[@aria-label = "Dismiss"] 
         Sleep    0.5       
         click element    //button/span[text()='Discard']
@@ -31,12 +31,15 @@ click job
         ${index}    Get Index From List    ${jobs}    ${element}
         Set Global Variable    ${index}
         ${value}    Evaluate    ${index}+1
-        ${job_title}    Get Element Text    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a
-        ${company}    Get Element Text    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class, 'ember-view')]//div/span)[${value}]
-        Append To List    ${jobs_list}    ${job_title}
+        ${status}=    Run Keyword And Return Status     Wait Until Element Is Visible    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a
+        ${job_title}    Get Text    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a
+        ${company}    Get Text    ((//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//div/span)[1]
+        # ${job_title}    Get Element Text    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a
+        # ${company}    Get Element Text    (//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class, 'ember-view')]//div/span)[${value}]
+        Append To List    ${jobs_list}    ${job_title}-${company}
         Click Element   (//div['data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${index}+1]//a
-         Wait Until Element Is Visible    (//button/span[text()='Easy Apply'])[1]
-        Click Button    (//button/span[text()='Easy Apply'])[1]
+        ${element_visibility}    Run Keyword And Return Status    Wait Until Element Is Visible    (//button/span[text()='Easy Apply'])[1]
+        Click Element    (//button/span[text()='Easy Apply'])[1]
         check modal is opened
         
     END

@@ -1,158 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on darwin)" generated="2025-01-30T23:42:12.883561" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on darwin)" generated="2025-02-04T00:07:59.266624" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="/Users/saipraneethvaddepelli/Desktop/automation/test.robot">
-<test id="s1-t1" name="Open Google" line="45">
+<test id="s1-t1" name="Open Google" line="48">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:42:13.245599" level="INFO">Opening browser 'Chrome' to base url 'https://www.linkedin.com/login'.</msg>
+<msg time="2025-02-04T00:07:59.627871" level="INFO">Opening browser 'Chrome' to base url 'https://www.linkedin.com/login'.</msg>
 <arg>https://www.linkedin.com/login</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-30T23:42:13.244668" elapsed="2.212764"/>
+<status status="PASS" start="2025-02-04T00:07:59.626926" elapsed="2.509237"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-30T23:42:15.458848" elapsed="0.330286"/>
+<status status="PASS" start="2025-02-04T00:08:02.137922" elapsed="0.327448"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:42:20.791114" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-04T00:08:07.469254" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:42:15.789847" elapsed="5.002765"/>
+<status status="PASS" start="2025-02-04T00:08:02.466172" elapsed="5.006119"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:42:20.797137" level="INFO">Typing text 'saipraneethvaddepelli@gmail.com' into text field '//div/input[@id='username']'.</msg>
+<msg time="2025-02-04T00:08:07.482781" level="INFO">Typing text 'saipraneethvaddepelli@gmail.com' into text field '//div/input[@id='username']'.</msg>
 <arg>${email_xpath}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:42:20.794328" elapsed="0.144589"/>
+<status status="PASS" start="2025-02-04T00:08:07.474456" elapsed="0.158942"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:42:22.940897" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-04T00:08:09.636340" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:42:20.939551" elapsed="2.001743"/>
+<status status="PASS" start="2025-02-04T00:08:07.634016" elapsed="2.005639"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:42:22.942513" level="INFO">Typing text 'Sai1025@' into text field '//div/input[@id='password']'.</msg>
+<msg time="2025-02-04T00:08:09.645102" level="INFO">Typing text 'Sai1025@' into text field '//div/input[@id='password']'.</msg>
 <arg>${password_xpath}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:42:22.941812" elapsed="0.038420"/>
+<status status="PASS" start="2025-02-04T00:08:09.642431" elapsed="0.072110"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:42:22.981467" level="INFO">Clicking element '//div[@class='login__form_action_container ']//button'.</msg>
+<msg time="2025-02-04T00:08:09.715939" level="INFO">Clicking element '//div[@class='login__form_action_container ']//button'.</msg>
 <arg>//div[@class='login__form_action_container ']//button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:42:22.980842" elapsed="12.721375"/>
+<status status="PASS" start="2025-02-04T00:08:09.715220" elapsed="5.122954"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>elemtent clicked</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-01-30T23:42:35.704437" elapsed="0.002119"/>
+<status status="PASS" start="2025-02-04T00:08:14.840763" elapsed="0.001601"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:42:45.713178" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-02-04T00:08:24.847509" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:42:35.708932" elapsed="10.006437"/>
+<status status="PASS" start="2025-02-04T00:08:14.843864" elapsed="10.007578"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>started</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-01-30T23:42:45.717529" elapsed="0.002125"/>
+<status status="PASS" start="2025-02-04T00:08:24.854182" elapsed="0.002626"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//div[@class='share-box-feed-entry__avatar']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T23:42:45.721124" elapsed="0.032537"/>
+<status status="PASS" start="2025-02-04T00:08:24.858541" elapsed="0.036604"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:42:45.755630" level="INFO">Clicking element '//span[text()='Jobs']'.</msg>
+<msg time="2025-02-04T00:08:24.897097" level="INFO">Clicking element '//span[text()='Jobs']'.</msg>
 <arg>//span[text()='Jobs']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:42:45.754680" elapsed="0.085387"/>
+<status status="PASS" start="2025-02-04T00:08:24.896136" elapsed="0.084062"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:43:05.843636" level="INFO">Slept 20 seconds.</msg>
+<msg time="2025-02-04T00:08:44.983824" level="INFO">Slept 20 seconds.</msg>
 <arg>20</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:42:45.840740" elapsed="20.005776"/>
+<status status="PASS" start="2025-02-04T00:08:24.980819" elapsed="20.008260"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//a[@aria-label='Show all Job picks for you']/span[text()='Show all']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-30T23:43:05.849182" elapsed="0.029775"/>
+<status status="PASS" start="2025-02-04T00:08:44.992949" elapsed="0.032956"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:43:08.882665" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-04T00:08:48.029834" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:43:05.880036" elapsed="3.005413"/>
+<status status="PASS" start="2025-02-04T00:08:45.026884" elapsed="3.005616"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:43:08.889917" level="INFO">Clicking element '//a[@aria-label='Show all Job picks for you']/span[text()='Show all']'.</msg>
+<msg time="2025-02-04T00:08:48.037227" level="INFO">Clicking element '//a[@aria-label='Show all Job picks for you']/span[text()='Show all']'.</msg>
 <arg>//a[@aria-label='Show all Job picks for you']/span[text()='Show all']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:43:08.887895" elapsed="0.088518"/>
+<status status="PASS" start="2025-02-04T00:08:48.035200" elapsed="0.089702"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:43:38.979608" level="INFO">Slept 30 seconds.</msg>
+<msg time="2025-02-04T00:09:18.127655" level="INFO">Slept 30 seconds.</msg>
 <arg>30</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:43:08.977056" elapsed="30.005333"/>
+<status status="PASS" start="2025-02-04T00:08:48.125619" elapsed="30.006274"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:43:49.990989" level="INFO">Typing text 'software engineer' into text field '(//input)[1]'.</msg>
+<msg time="2025-02-04T00:09:22.065151" level="INFO">Typing text 'software engineer' into text field '(//input)[1]'.</msg>
 <arg>(//input)[1]</arg>
 <arg>software engineer</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:43:38.985190" elapsed="11.225963"/>
+<status status="PASS" start="2025-02-04T00:09:18.135250" elapsed="4.182495"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:43:50.892190" level="INFO">Sending key(s) ('ENTER',) to (//input)[1] element.</msg>
-<msg time="2025-01-30T23:43:56.201128" level="INFO">Pressing special key ENTER to element.</msg>
-<msg time="2025-01-30T23:43:56.202785" level="INFO">Releasing special key ENTER.</msg>
+<msg time="2025-02-04T00:09:24.206830" level="INFO">Sending key(s) ('ENTER',) to (//input)[1] element.</msg>
+<msg time="2025-02-04T00:09:24.512182" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-02-04T00:09:24.513556" level="INFO">Releasing special key ENTER.</msg>
 <arg>(//input)[1]</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-01-30T23:43:50.211889" elapsed="6.160452"/>
+<status status="PASS" start="2025-02-04T00:09:22.319769" elapsed="2.308490"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:44:07.322750" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-02-04T00:09:36.873874" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:43:56.372861" elapsed="10.952499"/>
+<status status="PASS" start="2025-02-04T00:09:24.629072" elapsed="12.245989"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:44:08.353592" level="INFO">Clicking element '//button[text()="Easy Apply"]'.</msg>
+<msg time="2025-02-04T00:09:38.621574" level="INFO">Clicking element '//button[text()="Easy Apply"]'.</msg>
 <arg>//button[text()="Easy Apply"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-30T23:44:07.328660" elapsed="1.138357"/>
+<status status="PASS" start="2025-02-04T00:09:36.876460" elapsed="1.902339"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-30T23:44:39.172785" level="INFO">Slept 30 seconds.</msg>
+<msg time="2025-02-04T00:10:09.624431" level="INFO">Slept 30 seconds.</msg>
 <arg>30</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-30T23:44:08.467509" elapsed="30.707401"/>
+<status status="PASS" start="2025-02-04T00:09:38.779345" elapsed="30.853553"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-01-30T23:44:40.058779" level="INFO">@{jobs_list} = [ ]</msg>
+<msg time="2025-02-04T00:10:11.821803" level="INFO">@{jobs_list} = [ ]</msg>
 <var>@{jobs_list}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-01-30T23:44:39.177132" elapsed="0.882358"/>
+<status status="PASS" start="2025-02-04T00:10:09.638005" elapsed="2.184500"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2025-01-30T23:44:40.610485" level="INFO">@{jobs_list} = [ ]</msg>
+<msg time="2025-02-04T00:10:12.406931" level="INFO">@{jobs_list} = [ ]</msg>
 <arg>@{jobs_list}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2025-01-30T23:44:40.060958" elapsed="0.550308"/>
+<status status="PASS" start="2025-02-04T00:10:11.823920" elapsed="0.583827"/>
 </kw>
 <kw name="click job">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-01-30T23:44:41.108276" level="INFO">@{jobs} = [ ]</msg>
+<msg time="2025-02-04T00:10:13.520971" level="INFO">@{jobs} = [ ]</msg>
 <var>@{jobs}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-01-30T23:44:41.106784" elapsed="0.002212"/>
+<status status="PASS" start="2025-02-04T00:10:12.954194" elapsed="0.567458"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2025-01-30T23:44:41.131112" level="INFO">@{jobs} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="581333d03f6ab89724390b278370469e", element="f.D051BE634D0808092BA52CBF0E33D4D0.d.71713071F0233C3A67917D10798080AE.e.329")&gt; | &lt;selenium.webd...
+<msg time="2025-02-04T00:10:13.977541" level="INFO">@{jobs} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="e194443668da83c03f3e242d73ef974d", element="f.C6A9899C1613653003C9DE49DC338FFC.d.51C2F3EF2D5AD6529CF279DA547EB945.e.363")&gt; | &lt;selenium.webd...</msg>
+<var>@{jobs}</var>
+<arg>//div['data-results-list-top-scroll-sentinel']//ul/li[contains(@class, 'ember-view')]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:13.522864" elapsed="0.455664"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${jobs}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-04T00:10:13.979362" elapsed="0.410399"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-02-04T00:10:14.768944" level="INFO">Length is 25.</msg>
+<msg time="2025-02-04T00:10:14.769420" level="INFO">${length} = 25</msg>
+<var>${length}</var>
+<arg>${jobs}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-02-04T00:10:14.390911" elapsed="0.378758"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${length}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-04T00:10:14.770117" elapsed="0.418067"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Index From List" owner="Collections">
+<msg time="2025-02-04T00:10:16.458097" level="INFO">${index} = 0</msg>
+<var>${index}</var>
+<arg>${jobs}</arg>
+<arg>${element}</arg>
+<doc>Returns the index of the first occurrence of the ``value`` on the list.</doc>
+<status status="PASS" start="2025-02-04T00:10:16.021067" elapsed="0.437607"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-02-04T00:10:16.921543" level="INFO">${index} = 0</msg>
+<arg>${index}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-02-04T00:10:16.459552" elapsed="0.462805"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-04T00:10:17.342204" level="INFO">${value} = 1</msg>
+<var>${value}</var>
+<arg>${index}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-04T00:10:16.923269" elapsed="0.419772"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>(//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-04T00:10:17.737483" elapsed="0.658944"/>
+</kw>
+<msg time="2025-02-04T00:10:18.397104" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>(//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-04T00:10:17.344115" elapsed="1.053334"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:19.153455" level="INFO">${job_title} = Hiring for React JS
+Hiring for React JS</msg>
+<var>${job_title}</var>
+<arg>(//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//a</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:18.398150" elapsed="0.755779"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:19.882742" level="INFO">${company} = Risk Resources</msg>
+<var>${company}</var>
+<arg>((//div['@data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${value}]//div/span)[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:19.154589" elapsed="0.728863"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${jobs_list}</arg>
+<arg>${job_title}-${company}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-04T00:10:19.884391" elapsed="0.637011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:21.003860" level="INFO">Clicking element '(//div['data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[0+1]//a'.</msg>
+<arg>(//div['data-results-list-top-scroll-sentinel']//ul/li[contains(@class , 'ember-view')])[${index}+1]//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:20.522527" elapsed="0.647058"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>(//button/span[text()='Easy Apply'])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-04T00:10:21.420295" elapsed="0.694179"/>
+</kw>
+<msg time="2025-02-04T00:10:22.115105" level="INFO">${element_visibility} = True</msg>
+<var>${element_visibility}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>(//button/span[text()='Easy Apply'])[1]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-04T00:10:21.170010" elapsed="0.945412"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:22.569215" level="INFO">Clicking element '(//button/span[text()='Easy Apply'])[1]'.</msg>
+<arg>(//button/span[text()='Easy Apply'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:22.116002" elapsed="0.647390"/>
+</kw>
+<kw name="check modal is opened">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:31.631603" level="INFO">Element '//button[@aria-label = "Dismiss"]' is displayed.</msg>
+<arg>//button[@aria-label = "Dismiss"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-04T00:10:30.828055" elapsed="0.804486"/>
+</kw>
+<msg time="2025-02-04T00:10:31.633372" level="INFO">${element_visibility_dismiss} = True</msg>
+<var>${element_visibility_dismiss}</var>
+<arg>Element Should Be Visible</arg>
+<arg>//button[@aria-label = "Dismiss"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-04T00:10:23.655935" elapsed="7.977758"/>
+</kw>
+<if>
+<branch type="IF" condition="${element_visibility_dismiss} == True">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:42.955652" level="INFO">Clicking element '//button[@aria-label = "Dismiss"]'.</msg>
+<arg>//button[@aria-label = "Dismiss"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:40.586874" elapsed="2.474957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-04T00:10:45.712899" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-04T00:10:43.062320" elapsed="2.652970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T00:10:47.654958" level="INFO">Clicking element '//button/span[text()='Discard']'.</msg>
+<arg>//button/span[text()='Discard']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T00:10:45.717319" elapsed="2.125065"/>
+</kw>
+<status status="PASS" start="2025-02-04T00:10:31.634414" elapsed="16.208425"/>
+</branch>
+<status status="PASS" start="2025-02-04T00:10:31.634255" elapsed="16.209071"/>
+</if>
+<status status="PASS" start="2025-02-04T00:10:22.764043" elapsed="25.084005"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e194443668da83c03f3e242d73ef974d", element="f.C6A9899C1613653003C9DE49DC338FFC.d.51C2F3EF2D5AD6529CF279DA547EB945.e.363")&gt;</var>
+<status status="PASS" start="2025-02-04T00:10:15.592081" elapsed="32.256288"/>
+</iter>
+<iter>
+<kw name="Get Index From List" owner="Collections">
+<msg time="2025-02-04T00:10:55.340373" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>${jobs}</arg>
+<arg>${element}

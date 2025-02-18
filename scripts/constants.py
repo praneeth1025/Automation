@@ -11,10 +11,10 @@ class BrowserConstants:
 class ApplicantConstants:
     def __init__(self):
         ## username and passwords
-        self.username = 'namalashivacharan123'
-        self.email_id = 'namalashivacharan123@gmail.com'
+        self.username = 'username'
+        self.email_id = 'mail@mail.com'
         self.password = 'password@123'
 
         ## education
-        self.degree_college = 'JNTUH College of Engineering Sultanpur'
-        self.inter_college = 'Shraddha Junior College'
+        self.degree_college = 'Graduation College'
+        self.inter_college = 'Intermediate College'
